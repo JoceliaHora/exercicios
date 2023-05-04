@@ -1,5 +1,7 @@
-# Exercicios práticos
+# Exercicios práticos :woman_student:
 
-Esse repositório foi criado para armazenar meus exercícios de lógica, e para consultas posteriores. 
+Esse repositório foi criado para armazenar meus exercícios de lógica, e para consultas posteriores.
 
-:woman_student:
+Exercício 1005.js
+Média ParseFloat e Double
+estudar - tofixed e double
