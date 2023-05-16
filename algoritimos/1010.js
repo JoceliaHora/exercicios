@@ -1,15 +1,16 @@
 var input = require('fs').readFileSync('./dev/stdin', 'utf8');
 var lines = input.split('\n');
 
-/* var peca1 = parseInt(lines[0]); codigo da peca*/
-var numeroDePecas1 = parseFloat(lines[0, 1]);
-var valorUnitario1 = parseFloat(lines[0,2]);
+var list = lines[0].split(" ");
+var list2 = lines[1].split(" ");
 
-/* var peca2 = parseInt(lines[1,0]); codigo da peca*/
-var numeroDePecas2 = parseInt(lines[1,1]);
-var valorUnitario2 = parseFloat(lines[1,2]); 
+var valorPecas = parseFloat(list[2]);
+var valorPecas2 = parseFloat(list2[2]);
+var quant = parseFloat(list[1]);
+var quant2 = parseFloat(list2[1]);
 
-/* let pecas1 = parseInt(peca1 + numeroDePecas1 + valorUnitario1);
-let pecas2 = parseInt(peca2 + numeroDePecas2 + valorUnitario2);
- */
-console.log("VALOR A PAGAR: R$" +  numeroDePecas1);
+valorPecas = valorPecas * quant ;
+valorPecas2 = valorPecas2 * quant2;
+var total = valorPecas  + valorPecas2;
+
+console.log("VALOR A PAGAR: R$ " + total.toFixed(2));
